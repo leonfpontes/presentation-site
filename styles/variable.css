@@ -1,0 +1,12 @@
+
+:root{
+    /* CORES */
+    --bg-theme-color: #22D4FD;
+    --bg-page: #000;
+    --bg-hover: #272727;
+    --text-color: #F6F6F6;
+
+    /* FONTE */
+    --text-content: "Montserrat", sans-serif;
+    --text-title: "Krona One", sans-serif;
+}

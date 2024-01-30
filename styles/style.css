@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--text-content);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--bg-theme-color);
+}
+
+.cabecalho__menu__link:hover{
+    text-decoration: underline;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--bg-page);
+    color: var(--text-color);
+}
+
+strong{
+    color: var(--bg-theme-color);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-family: var(--text-title);
+    font-size: 2.25rem;
+}
+
+.apresentacao__conteudo p{
+    font-family: var(--text-content);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--text-title);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--text-color);
+    border-color: var(--bg-theme-color);
+    border: 2px solid var(--bg-theme-color);
+    border-radius: 0.5rem;
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--text-content);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.apresentacao__links__navegacao:hover{
+    cursor: pointer;
+    background-color: var(--bg-hover);
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+.rodape {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--text-content);
+    background-color: var(--bg-theme-color);
+    color: var(--bg-page);
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
